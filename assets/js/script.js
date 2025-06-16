@@ -18,7 +18,7 @@ btnFunc.forEach((func) => {
 		if (func.innerHTML == 'C') {
 			display.value = null;
 		} else if (func.innerHTML == '=') {
-			result = countExample(display.value);
+			result = strToExample(display.value);
 			display.value = result; // вывод результата подсчета
 		} else {
 			display.value += currentFunc;
@@ -26,29 +26,10 @@ btnFunc.forEach((func) => {
 	});
 });
 
-/*
-	Прилетела строка с выражением типа "3+3-5*4"
-
-	Надо: достать умножение и его заменить (для этого надо внести все функции в массив)
-
-	Из массива btnFunc +, -, /, *, (, )
+function strToExample(str) {
+	let arSymbs = new Array();
 	
- */
-function countExample(example) {
-	let res = 0;
-
-	/*if (example.includes('(', 0)) {
-		resNoStaples = extractStaples(example); // получаем массив из выражений со скобками
-	}*/
-
-	if (example.includes('x', 0)) {
-		res = multiple(example);
-	} /*else if (example.includes('+', 0)) {
-		res = sumNums(example);
-	}
-	console.log(example);*/
-
-	return res;
+	console.log();
 }
 
 function findIndex(x, example) {
