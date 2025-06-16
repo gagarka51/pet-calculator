@@ -27,36 +27,16 @@ btnFunc.forEach((func) => {
 });
 
 function strToExample(str) {
-	let arSymbs = new Array();
-	
-	console.log();
+	let arSymbs = Array.from(str);
+
+	arSymbs.forEach(symb => {
+		if (symb == ) {
+			expression
+		}
+	});
+
+	console.log(arSymbs);
 }
-
-function findIndex(x, example) {
-	if (x === "x") {
-		let startIndex = example.indexOf('x');
-
-		btnFunc.forEach((func) => {
-			if (func !== "x") {
-				
-			}
-		});
-
-		console.log(example);
-		console.log("Позиция знака: " + startIndex);
-	}
-}
-
-function multiple(example) {
-
-	startIndex = findIndex("x", example);
-
-	//console.log(example);
-}
-
-
-
-
 
 
 /*function extractStaples(example) {
