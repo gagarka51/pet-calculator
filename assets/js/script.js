@@ -26,6 +26,7 @@ btnFunc.forEach((func) => {
 		}
 	});
 });
+
 /*
 	
 	Возвращает массив вида:
@@ -49,6 +50,11 @@ function strToAr(str) {
 	return arInfoSymbs;
 }
 
+function countExample(arInfoSymbs) {
+	let result = 0;
+	
+	return result;
+}
 
 /*function extractStaples(example) {
 
