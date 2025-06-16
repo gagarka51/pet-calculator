@@ -1,6 +1,7 @@
 let display = document.getElementById("display");
 const numbers = document.querySelectorAll(".number"); // выловили кнопки по селектору (числовые)
 const btnFunc = document.querySelectorAll(".btn-func");
+const arNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 let result = null;
 	
 numbers.forEach((num) => {
@@ -26,16 +27,19 @@ btnFunc.forEach((func) => {
 	});
 });
 
-function strToExample(str) {
+function strToAr(str) {
 	let arSymbs = Array.from(str);
+	let arInfoSymbs = {};
 
-	arSymbs.forEach(symb => {
-		if (symb == ) {
-			expression
+	arSymbs.forEach((symb, index) => {
+		if (arNumbers.includes(symb, 0) == true) {
+			arInfoSymbs[index] = 'operator ' + symb;
+		} else if {
+			arInfoSymbs[index] = 'operand ' + symb;
 		}
 	});
-
-	console.log(arSymbs);
+	
+	console.log(arInfoSymbs);
 }
 
 
@@ -54,21 +58,3 @@ function strToExample(str) {
 
 	return example; // вернули выражение без скобок
 }*/
-
-// сумма чисел
-function sumNums(example) {
-	let res = 0;
-	let ex = example.split('+'); // получили массив из чисел (без плюсов)
-	ex.forEach(num => res += Number(num));
-
-	return res;
-}
-
-// умножение чисел
-function mulNums(example) {
-	let res = 1;
-	let ex = example.split('x');
-	ex.forEach(num => res *= Number(num));
-
-	return res;
-}
