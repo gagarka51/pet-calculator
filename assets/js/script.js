@@ -19,27 +19,34 @@ btnFunc.forEach((func) => {
 		if (func.innerHTML == 'C') {
 			display.value = null;
 		} else if (func.innerHTML == '=') {
-			result = strToExample(display.value);
+			result = strToAr(display.value);
 			display.value = result; // вывод результата подсчета
 		} else {
 			display.value += currentFunc;
 		}
 	});
 });
+/*
+	
+	Возвращает массив вида:
+	0: {operator: '1'}
+	1: {operand: '-'}
+	...
 
+ */
 function strToAr(str) {
 	let arSymbs = Array.from(str);
 	let arInfoSymbs = {};
 
 	arSymbs.forEach((symb, index) => {
 		if (arNumbers.includes(symb, 0) == true) {
-			arInfoSymbs[index] = 'operator ' + symb;
-		} else if {
-			arInfoSymbs[index] = 'operand ' + symb;
+			arInfoSymbs[index] = {'operator' : symb};
+		} else {
+			arInfoSymbs[index] = {'operand' : symb};
 		}
 	});
 	
-	console.log(arInfoSymbs);
+	return arInfoSymbs;
 }
 
 
