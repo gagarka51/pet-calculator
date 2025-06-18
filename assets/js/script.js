@@ -19,7 +19,8 @@ btnFunc.forEach((func) => {
 		if (func.innerHTML == 'C') {
 			display.value = null;
 		} else if (func.innerHTML == '=') {
-			result = strToAr(display.value);
+			//result = strToAr(display.value);
+			result = eval(display.value);
 			display.value = result; // вывод результата подсчета
 		} else {
 			display.value += currentFunc;
