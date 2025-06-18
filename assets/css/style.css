@@ -1,11 +1,11 @@
-@import url("fonts.css");*/
+@import url("fonts.css");
 
 * {
 	margin: 0;
 	padding: 0;
 }
 button {
-	font-family: 'ChakraPetch-Regular', sans-serif;
+	font-family: 'Swanston', sans-serif;
 }
 .calculator-block {
 	width: 200px;
