@@ -1,4 +1,4 @@
-/*@import url("fonts.css");*/
+@import url("fonts.css");*/
 
 * {
 	margin: 0;
@@ -17,7 +17,7 @@ button {
 .calculator-display {
 	margin-bottom: 20px;
 	padding: 10px 15px;
-	font-family: ;
+	text-align: right;
 }
 .btn-groups button {
 	padding: 10px 15px;
