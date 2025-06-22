@@ -1,4 +1,5 @@
 let display = document.getElementById("display");
+let showDisplay = document.getElementById("old-display");
 const numbers = document.querySelectorAll(".number"); // выловили кнопки по селектору (числовые)
 const btnFunc = document.querySelectorAll(".btn-func");
 const arNumbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -20,6 +21,7 @@ btnFunc.forEach((func) => {
 			display.value = null;
 		} else if (func.innerHTML == '=') {
 			//result = strToAr(display.value);
+			showDisplay.value = display.value; // показ предыдущего выражения
 			result = eval(display.value);
 			display.value = result; // вывод результата подсчета
 		} else {
@@ -36,7 +38,7 @@ btnFunc.forEach((func) => {
 	...
 
  */
-function strToAr(str) {
+/*function strToAr(str) {
 	let arSymbs = Array.from(str);
 	let arInfoSymbs = {};
 
@@ -49,13 +51,13 @@ function strToAr(str) {
 	});
 	
 	return arInfoSymbs;
-}
+}*/
 
-function countExample(arInfoSymbs) {
+/*function countExample(arInfoSymbs) {
 	let result = 0;
 	
 	return result;
-}
+}*/
 
 /*function extractStaples(example) {
 
