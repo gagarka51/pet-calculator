@@ -1,23 +1,30 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: 'Huninn', sans-serif;
 }
 button {
-	font-family: 'Huninn', sans-serif;
 	font-size: 18px;
 }
 .calculator-block {
 	width: 200px;
 	margin: 10% auto;
-	border: 1px solid black;
-	padding: 15px 10px;
+	padding: 15px 10px 15px 20px;
 	background-color: #FFFFFF;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .calculator-display {
 	margin-bottom: 20px;
 	padding: 10px 15px;
 	text-align: right;
-	font-family: 'Huninn', sans-serif;
+	border: none;
+	font-size: 20px;
+	width: 160px;
+}
+.calculator-display-show {
+	padding: 10px 15px;
+	text-align: right;
+	border: none;
 }
 .btn-groups button {
 	padding: 10px 15px;
