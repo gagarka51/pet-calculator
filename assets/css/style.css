@@ -6,9 +6,16 @@
 button {
 	font-size: 18px;
 }
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.block-1 {
+	display: flex;
+	padding: 100px;
+}
 .calculator-block {
 	width: 200px;
-	margin: 10% auto;
 	padding: 15px 10px 15px 20px;
 	background-color: #FFFFFF;
 	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
