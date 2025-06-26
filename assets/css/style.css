@@ -60,3 +60,16 @@ button {
 .btn-theme img {
 	width: 25px;
 }
+/* Тёмная тема */
+.night-body {
+	background-color: black;
+}
+.night-calc {
+	background-color: #020317;
+}
+.night-btn {
+	background-color: #020317;
+}
+.night-display {
+	color: #fff;
+}

@@ -4,9 +4,14 @@ let btn = document.getElementById("btn-theme");
 let btnImg = document.getElementById("btn-theme-img");
 
 btn.onclick = function(){
-	body.style.backgroundColor = "#161a1f";
-	calculator.style.backgroundColor = "#020317";
-	btn.style.backgroundColor = "#020317";
-	display.style.color = "#fff";
-	btnImg.src = "assets/img/morning.svg";
+	if (body.classList.contains("night") == false) {
+		body.classList.add("night-body");
+		calculator.classList.add("night-calc");
+		btn.classList.add("night-btn");
+		display.classList.add("night-display");
+		btnImg.classList.add("night-img");
+		btnImg.src = "assets/img/morning.svg";
+	} else {
+		body.classList.remove("night-body");
+	}
 }
