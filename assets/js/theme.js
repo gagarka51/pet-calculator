@@ -3,5 +3,5 @@ let body = document.body;
 let btn = document.getElementById("btn-theme");
 
 btn.onclick = function(){
-	alert("Смена темы");
+	document.body.style.backgroundColor = "#161a1f";
 }

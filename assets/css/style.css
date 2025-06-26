@@ -50,7 +50,7 @@ button {
 	background-color: #D2691E;
 }
 .btn-theme button {
-	background: none;
+	background: white;
 	border: none;
 	padding: 10px;
 	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
