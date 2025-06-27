@@ -9,5 +9,10 @@ btn.onclick = function(){
 	btn.classList.toggle("night-btn");
 	display.classList.toggle("night-display");
 	btnImg.classList.toggle("night-img");
-	btnImg.src = "assets/img/morning.svg";
+	
+	if (btnImg.classList.contains("night-img") == true) {
+		btnImg.src = "assets/img/morning.svg";
+	} else {
+		btnImg.src = "assets/img/night-sky.svg";
+	}
 }
