@@ -62,13 +62,13 @@ button {
 }
 /* Тёмная тема */
 .night-body {
-	background-color: black;
+	background-color: #1c1919;
 }
 .night-calc {
-	background-color: #020317;
+	background-color: #000000;
 }
-.night-btn {
-	background-color: #020317;
+.btn-theme .night-btn {
+	background-color: #000000;
 }
 .night-display {
 	color: #fff;
